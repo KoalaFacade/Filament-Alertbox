@@ -1,0 +1,16 @@
+{
+  "preset": "laravel",
+
+  "rules": {
+    "types_spaces": {
+      "space": "single"
+    },
+    "concat_space": {
+      "spacing": "one"
+    },
+    "explicit_indirect_variable": true,
+    "method_chaining_indentation": true,
+    "no_blank_lines_after_class_opening": true,
+    "single_quote": true
+  }
+}

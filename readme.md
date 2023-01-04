@@ -7,7 +7,7 @@
     <a href="https://php.net"><img src="https://img.shields.io/badge/PHP-8.1-7A86B8?style=for-the-badge&logo=php" alt="PHP Badge"/></a>
 </p>
 
-![KoalaFacade Logo](https://i.ibb.co/mcH75X0/image.png)
+<img src="https://i.ibb.co/4VjxRY2/image.png" alt="preview of package" width="100%"/>
 
 > Filament plugin to handle an alert box in your form page
 

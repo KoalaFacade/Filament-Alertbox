@@ -23,27 +23,27 @@ composer require koalafacade/filament-alertbox
 use KoalaFacade\FilamentAlertBox\Forms\Components\AlertBox
 
 AlertBox::make()
-    ->label(label: 'Oops');
+    ->label(label: 'Oops')
     ->helperText(label: 'please make a payment first.')
     ->icon(name: 'heroicon-o-exclamation')
-    ->warning()
+    ->warning();
 ```
 
 ## Available Method
 This field has most of the same functionality of the Field class
  ```php
   /** define alert type */
-  function primary(): static
-  function warning(): static
-  function success(): static
-  function danger(): static
+  function primary(): static;
+  function warning(): static;
+  function success(): static;
+  function danger(): static;
 
   /** hide alert box */
-  function hidden(bool | Closure $condition = true): static
-  function hiddenOn(string | array $contexts): static
+  function hidden(bool | Closure $condition = true): static;
+  function hiddenOn(string | array $contexts): static;
 
   /** define alert icon */
-  function hiddenOn(string | array $contexts): static
+  function hiddenOn(string | array $contexts): static;
  ```
 
 ## License

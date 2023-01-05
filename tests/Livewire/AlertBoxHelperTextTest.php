@@ -5,7 +5,7 @@ namespace KoalaFacade\FilamentAlertBox\Tests\Livewire;
 use KoalaFacade\FilamentAlertBox\Forms\Components\AlertBox;
 use function Pest\Livewire\livewire;
 
-it(description: 'can show success background color when type is warning')
+it(description: 'can show the helper text')
     ->tap(callable: function () {
         CreatePost::$formSchema = [
             AlertBox::make()

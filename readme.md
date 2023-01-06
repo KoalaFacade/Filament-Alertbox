@@ -1,4 +1,4 @@
-<img src="https://i.ibb.co/4VjxRY2/image.png" alt="preview of package" width="100%"/>
+<img src="https://i.ibb.co/gzcpNv5/Banner-Package.png" alt="preview of package" width="100%"/>
 
 <p align="center">
     <a href="https://packagist.org/packages/koalafacade/filament-alertbox"><img src="https://img.shields.io/packagist/v/KoalaFacade/filament-alertbox?color=F28D1A&style=for-the-badge" alt="Packagist"/></a>

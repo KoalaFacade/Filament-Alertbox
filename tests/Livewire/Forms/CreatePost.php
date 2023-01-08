@@ -1,6 +1,6 @@
 <?php
 
-namespace KoalaFacade\FilamentAlertBox\Tests\Livewire;
+namespace KoalaFacade\FilamentAlertBox\Tests\Livewire\Forms;
 
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;

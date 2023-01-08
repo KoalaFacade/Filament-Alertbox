@@ -3,6 +3,7 @@
 namespace KoalaFacade\FilamentAlertBox\Tests\Livewire;
 
 use KoalaFacade\FilamentAlertBox\Forms\Components\AlertBox;
+use KoalaFacade\FilamentAlertBox\Tests\Livewire\Forms\CreatePost;
 use function Pest\Livewire\livewire;
 
 it(description: 'can show success background color when type is success')

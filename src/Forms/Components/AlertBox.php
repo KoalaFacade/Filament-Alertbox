@@ -2,15 +2,13 @@
 
 namespace KoalaFacade\FilamentAlertBox\Forms\Components;
 
-use Filament\Forms\Components\Concerns\HasExtraInputAttributes;
 use Filament\Forms\Components\Field;
-use KoalaFacade\FilamentAlertBox\Concerns\HasIcon;
-use KoalaFacade\FilamentAlertBox\Concerns\HasType;
+use KoalaFacade\FilamentAlertBox\Concerns\Forms\HasIcon;
+use KoalaFacade\FilamentAlertBox\Concerns\Forms\HasType;
 
 class AlertBox extends Field
 {
-    use HasExtraInputAttributes,
-        HasType,
+    use HasType,
         HasIcon;
 
     protected string $view = 'filament-alertbox::forms.components.filament-alertbox';

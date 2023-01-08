@@ -1,4 +1,4 @@
-<img src="https://i.ibb.co/gzcpNv5/Banner-Package.png" alt="preview of package" width="100%"/>
+<img src="https://i.ibb.co/JzJ9Gz4/Personal-design.png" alt="preview of package" width="100%"/>
 
 <p align="center">
     <a href="https://packagist.org/packages/koalafacade/filament-alertbox"><img src="https://img.shields.io/packagist/v/KoalaFacade/filament-alertbox?color=F28D1A&style=for-the-badge" alt="Packagist"/></a>
@@ -9,7 +9,7 @@
 
 
 
-> Filament plugin to handle an alert box in your form page
+> Filament plugin for display a static alert box in your filament forms or widget.
 
 ## Installation
 You can install the package via composer: 
@@ -19,6 +19,7 @@ composer require koalafacade/filament-alertbox
 
 ## Usage
 
+### Forms
 ```php
 use KoalaFacade\FilamentAlertBox\Forms\Components\AlertBox
 
@@ -29,7 +30,7 @@ AlertBox::make()
     ->warning();
 ```
 
-## Available Method
+### Available Method
 This field has most of the same functionality of the Field class
  ```php
   /** define alert type */
@@ -45,7 +46,23 @@ This field has most of the same functionality of the Field class
   /** define alert icon */
   function hiddenOn(string | array $contexts): static;
  ```
+### Widget
+For implement alert box widget you can create a widget as usual then inheritance our package class
+```php
+use  KoalaFacade\FilamentAlertBox\Widgets\AlertBoxWidget
 
+class YourWidgetTho extends AlertBoxWidget
+{
+    public string | null $icon = 'heroicon-o-exclamation';
+
+    /** success, warning, danger, primary */
+    public string $type = 'warning';
+
+    public string | null $label = 'Oops';
+
+    public string | null $helperText = 'your ex blocked you';
+}
+```
 ## License
 The MIT License (MIT). Please see [License File](https://github.com/KoalaFacade/Filament-Alertbox/blob/main/LICENSE.md) for more information.
 

@@ -1,4 +1,4 @@
-<x-filament::widget class="filament-account-widget">
+<x-filament::widget class="filament-alert-box-widget">
     <x-filament-alertbox::base-alert-box
         :type="$this->getType()"
         :extraAttributes="$this->getExtraAttributes()"

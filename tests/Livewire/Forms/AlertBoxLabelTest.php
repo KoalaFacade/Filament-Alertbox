@@ -3,16 +3,17 @@
 namespace KoalaFacade\FilamentAlertBox\Tests\Livewire;
 
 use KoalaFacade\FilamentAlertBox\Forms\Components\AlertBox;
+use KoalaFacade\FilamentAlertBox\Tests\Livewire\Forms\CreatePost;
 use function Pest\Livewire\livewire;
 
-it(description: 'can show the helper text')
+it(description: 'can show the label')
     ->tap(callable: function () {
         CreatePost::$formSchema = [
             AlertBox::make()
-                ->helperText(text: 'fuck im dying with my friendzone')
-                ->warning(),
+                ->label(label: 'love you more than i know')
+                ->success(),
         ];
 
         livewire(name: CreatePost::class)
-            ->assertSee(values: 'fuck im dying with my friendzone');
+            ->assertSee(values: 'love you more than i know');
     });

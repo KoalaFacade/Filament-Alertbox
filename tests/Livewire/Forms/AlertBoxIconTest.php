@@ -1,7 +1,7 @@
 <?php
 
 use KoalaFacade\FilamentAlertBox\Forms\Components\AlertBox;
-use KoalaFacade\FilamentAlertBox\Tests\Livewire\CreatePost;
+use KoalaFacade\FilamentAlertBox\Tests\Livewire\Forms\CreatePost;
 use function Pest\Livewire\livewire;
 
 it(description: 'can show the icon')

@@ -49,18 +49,18 @@ This field has most of the same functionality of the Field class
 ### Widget
 For implement alert box widget you can create a widget as usual then inheritance our package class
 ```php
-use  KoalaFacade\FilamentAlertBox\Widgets\AlertBoxWidget
+use  KoalaFacade\FilamentAlertBox\Widgets\AlertBoxWidget;
 
 class YourWidgetTho extends AlertBoxWidget
 {
-    public string | null $icon = 'heroicon-o-exclamation';
-
+    public string | Closure | null $icon = 'heroicon-o-exclamation';
+    
     /** success, warning, danger, primary */
-    public string $type = 'warning';
+    public string $type = 'success';
 
-    public string | null $label = 'Oops';
+    public string | Closure | null $label = 'Test';
 
-    public string | null $helperText = 'your ex blocked you';
+    public string | Closure | null | HtmlString $helperText = 'please shut u freakin mouth';
 }
 ```
 ## License

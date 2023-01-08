@@ -2,15 +2,17 @@
 
 namespace KoalaFacade\FilamentAlertBox\Tests\Livewire\Widget;
 
+use Closure;
+use Illuminate\Support\HtmlString;
 use KoalaFacade\FilamentAlertBox\Widgets\AlertBoxWidget;
 
 class WidgetTestComponent extends AlertBoxWidget
 {
-    public string | null $icon = 'heroicon-o-exclamation';
+    public string | Closure | null $icon = 'heroicon-o-exclamation';
 
     public string $type = 'success';
 
-    public string | null $label = 'Test';
+    public string | Closure | null $label = 'Test';
 
-    public string | null $helperText = 'please shut u freakin mouth';
+    public string | Closure | null | HtmlString $helperText = 'please shut u freakin mouth';
 }

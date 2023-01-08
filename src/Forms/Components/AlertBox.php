@@ -3,8 +3,8 @@
 namespace KoalaFacade\FilamentAlertBox\Forms\Components;
 
 use Filament\Forms\Components\Field;
-use KoalaFacade\FilamentAlertBox\Concerns\Forms\HasIcon;
 use KoalaFacade\FilamentAlertBox\Concerns\Forms\HasType;
+use KoalaFacade\FilamentAlertBox\Concerns\HasIcon;
 
 class AlertBox extends Field
 {

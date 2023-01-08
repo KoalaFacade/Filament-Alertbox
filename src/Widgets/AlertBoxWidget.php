@@ -2,15 +2,15 @@
 
 namespace KoalaFacade\FilamentAlertBox\Widgets;
 
+use Filament\Forms\Components\Concerns\HasHelperText;
 use Filament\Support\Concerns\EvaluatesClosures;
 use Filament\Support\Concerns\HasExtraAttributes;
+use Filament\Tables\Columns\Concerns\HasLabel;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
+use KoalaFacade\FilamentAlertBox\Concerns\HasIcon;
 use KoalaFacade\FilamentAlertBox\Concerns\HasType;
-use KoalaFacade\FilamentAlertBox\Concerns\Widget\HasHelperText;
-use KoalaFacade\FilamentAlertBox\Concerns\Widget\HasIcon;
-use KoalaFacade\FilamentAlertBox\Concerns\Widget\HasLabel;
 use Livewire\Component;
 
 class AlertBoxWidget extends Component

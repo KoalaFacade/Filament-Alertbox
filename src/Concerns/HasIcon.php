@@ -1,6 +1,6 @@
 <?php
 
-namespace KoalaFacade\FilamentAlertBox\Concerns\Forms;
+namespace KoalaFacade\FilamentAlertBox\Concerns;
 
 use Closure;
 use KoalaFacade\FilamentAlertBox\Forms\Components\AlertBox;

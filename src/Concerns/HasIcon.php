@@ -3,9 +3,7 @@
 namespace KoalaFacade\FilamentAlertBox\Concerns;
 
 use Closure;
-use KoalaFacade\FilamentAlertBox\Forms\Components\AlertBox;
 
-/**@mixin AlertBox */
 trait HasIcon
 {
     public string | Closure | null $icon = '';

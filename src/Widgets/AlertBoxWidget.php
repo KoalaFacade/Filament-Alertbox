@@ -6,7 +6,6 @@ use Filament\Forms\Components\Concerns\HasHelperText;
 use Filament\Support\Concerns\EvaluatesClosures;
 use Filament\Support\Concerns\HasExtraAttributes;
 use Filament\Tables\Columns\Concerns\HasLabel;
-use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use KoalaFacade\FilamentAlertBox\Concerns\HasIcon;
@@ -35,7 +34,12 @@ class AlertBoxWidget extends Component
         return $this->columnSpan;
     }
 
-    public function render(): Factory | View | Application
+    public static function canView(): bool
+    {
+        return true;
+    }
+
+    public function render(): Factory | View
     {
         return view(static::$view);
     }

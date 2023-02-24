@@ -6,17 +6,29 @@ use Closure;
 
 trait HasIcon
 {
-    public string | Closure | null $icon = '';
+    protected string | Closure | null $icon = '';
 
+    protected string | Closure | null $resolveIconUsing = null;
+
+    /**
+     * @deprecated can use resolveIconUsing
+     */
     public function icon(string | Closure | null $name): static
     {
-        $this->icon = $name;
+        return $this->resolveIconUsing(name: $name);
+    }
+
+    public function resolveIconUsing(string | Closure | null $name): static
+    {
+        $this->resolveIconUsing = $name;
 
         return $this;
     }
 
     public function getIcon(): mixed
     {
-        return $this->evaluate(value: $this->icon);
+        $icon = $this->resolveIconUsing ?: $this->icon;
+
+        return $this->evaluate(value: $icon);
     }
 }

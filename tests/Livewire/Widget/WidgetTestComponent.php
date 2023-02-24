@@ -13,7 +13,7 @@ class WidgetTestComponent extends AlertBoxWidget
 
     public string $type = 'success';
 
-    public string|Closure|Htmlable|null $label = 'Test';
+    public string | Closure | Htmlable | null $label = 'Test';
 
     public string | Closure | null | HtmlString $helperText = 'please shut u freakin mouth';
 }

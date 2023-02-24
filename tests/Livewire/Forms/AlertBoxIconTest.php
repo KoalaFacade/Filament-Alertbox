@@ -8,7 +8,18 @@ it(description: 'can show the icon')
     ->tap(callable: function () {
         CreatePost::$formSchema = [
             AlertBox::make()
-                ->icon(name: 'heroicon-o-exclamation')
+                ->warning(),
+        ];
+
+        livewire(name: CreatePost::class)
+            ->assertSee(values: 'icon mr-5');
+    });
+
+it(description: 'can show the icon if resolve the icon manually')
+    ->tap(callable: function () {
+        CreatePost::$formSchema = [
+            AlertBox::make()
+                ->resolveIconUsing(name: 'heroicon-o-check-circle')
                 ->warning(),
         ];
 

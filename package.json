@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "scripts": {
+    "dev:styles": "npx tailwindcss -i resources/css/plugin.css -o resources/dist/filament-alertbox.css --postcss --watch",
+    "build:styles": "npx tailwindcss -i resources/css/plugin.css -o resources/dist/filament-alertbox.css --postcss --minify && npm run purge",
+    "purge": "filament-purge -i resources/dist/drop-in-action.css -o resources/dist/filament-alertbox.css",
+    "dev": "npm-run-all --parallel dev:*",
+    "build": "npm-run-all build:*"
+  },
+  "name": "filament-alertbox",
+  "version": "1.0.0",
+  "description": "Filament plugin field for display an alert box in your filament forms",
+  "author": "pemudakoding <pemudakoding@gmail.com>",
+  "license": "MIT"
+}

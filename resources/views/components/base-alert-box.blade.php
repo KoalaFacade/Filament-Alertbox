@@ -1,7 +1,6 @@
 @props(['type', 'extraAttributes', 'icon', 'label', 'helperText'])
 
 @php
-
     $backgroundClass = match($type) {
         'primary' => 'bg-primary-500',
         'success' => 'bg-success-500',
@@ -10,12 +9,7 @@
         'secondary' => 'bg-gray-500',
     };
 
-    $textColor = match($type) {
-        'primary',
-        'success',
-        'warning' => 'text-gray-900',
-        default => 'text-gray-50'
-    };
+    $textColor = 'text-gray-50';
 
 @endphp
 <div {{ $attributes

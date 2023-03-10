@@ -12,7 +12,7 @@ it(description: 'can show the icon')
         ];
 
         livewire(name: CreatePost::class)
-            ->assertSee(values: 'icon mr-5');
+            ->assertSee(values: 'icon px-3 mr-2');
     });
 
 it(description: 'can show the icon if resolve the icon manually')
@@ -24,5 +24,5 @@ it(description: 'can show the icon if resolve the icon manually')
         ];
 
         livewire(name: CreatePost::class)
-            ->assertSee(values: 'icon mr-5');
+            ->assertSee(values: 'icon px-3 mr-2');
     });

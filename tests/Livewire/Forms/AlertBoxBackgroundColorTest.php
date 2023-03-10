@@ -15,7 +15,7 @@ it(description: 'can show success background color when type is success')
         ];
 
         livewire(name: CreatePost::class)
-            ->assertSee(values: baseClassWith(backgroundColor: 'bg-success-300', textColor: 'text-slate-700'));
+            ->assertSee(values: baseClassWith(backgroundColor: 'bg-success-500', textColor: 'text-gray-900'));
     });
 
 it(description: 'can show success background color when type is warning')
@@ -27,7 +27,7 @@ it(description: 'can show success background color when type is warning')
         ];
 
         livewire(name: CreatePost::class)
-            ->assertSee(values: baseClassWith(backgroundColor: 'bg-warning-300', textColor: 'text-slate-700'));
+            ->assertSee(values: baseClassWith(backgroundColor: 'bg-warning-500', textColor: 'text-gray-900'));
     });
 
 it(description: 'can show success background color when type is primary')
@@ -39,7 +39,7 @@ it(description: 'can show success background color when type is primary')
         ];
 
         livewire(name: CreatePost::class)
-            ->assertSee(values: baseClassWith(backgroundColor: 'bg-primary-300', textColor: 'text-slate-700'));
+            ->assertSee(values: baseClassWith(backgroundColor: 'bg-primary-500', textColor: 'text-gray-900'));
     });
 
 it(description: 'can show success background color when type is danger')
@@ -51,5 +51,5 @@ it(description: 'can show success background color when type is danger')
         ];
 
         livewire(name: CreatePost::class)
-            ->assertSee(values: baseClassWith(backgroundColor: 'bg-danger-400', textColor: 'text-slate-50'));
+            ->assertSee(values: baseClassWith(backgroundColor: 'bg-danger-500', textColor: 'text-gray-50'));
     });

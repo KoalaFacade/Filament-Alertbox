@@ -3,18 +3,18 @@
 @php
 
     $backgroundClass = match($type) {
-        'primary' => 'bg-primary-300',
-        'success' => 'bg-success-300',
-        'warning' => 'bg-warning-300',
-        'danger' => 'bg-danger-400',
-        'secondary' => 'bg-slate-300',
+        'primary' => 'bg-primary-500',
+        'success' => 'bg-success-500',
+        'warning' => 'bg-warning-500',
+        'danger' => 'bg-danger-500',
+        'secondary' => 'bg-gray-500',
     };
 
     $textColor = match($type) {
         'primary',
         'success',
-        'warning' => 'text-slate-700',
-        default => 'text-slate-50'
+        'warning' => 'text-gray-900',
+        default => 'text-gray-50'
     };
 
 @endphp
@@ -30,7 +30,7 @@
     }}
 >
     @if ($icon = $icon)
-        <div class="icon mr-5">
+        <div class="icon px-3 mr-2">
             <x-dynamic-component :component="$icon" class="w-10 h-10" />
         </div>
     @endif

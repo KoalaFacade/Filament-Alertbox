@@ -35,7 +35,7 @@
             </div>
         @endif
         <div class="description font-light">
-            {{$helperText}}
+            {!! nl2br(htmlspecialchars($helperText)) !!}
         </div>
     </div>
 </div>

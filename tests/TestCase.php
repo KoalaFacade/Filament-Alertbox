@@ -7,6 +7,7 @@ use BladeUI\Icons\BladeIconsServiceProvider;
 use Filament\FilamentServiceProvider;
 use Filament\Forms\FormsServiceProvider;
 use Filament\Support\SupportServiceProvider;
+use Filament\Widgets\WidgetsServiceProvider;
 use Illuminate\Encryption\Encrypter;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\ServiceProvider;
@@ -27,6 +28,7 @@ class TestCase extends \Orchestra\Testbench\TestCase
         return [
             FilamentAlertBoxServiceProvider::class,
             FilamentServiceProvider::class,
+            WidgetsServiceProvider::class,
             ViewServiceProvider::class,
             LivewireServiceProvider::class,
             FormsServiceProvider::class,

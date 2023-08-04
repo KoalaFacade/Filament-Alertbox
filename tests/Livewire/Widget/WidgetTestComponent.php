@@ -4,12 +4,11 @@ namespace KoalaFacade\FilamentAlertBox\Tests\Livewire\Widget;
 
 use Closure;
 use Illuminate\Contracts\Support\Htmlable;
-use Illuminate\Support\HtmlString;
 use KoalaFacade\FilamentAlertBox\Widgets\AlertBoxWidget;
 
 class WidgetTestComponent extends AlertBoxWidget
 {
-    public string | Closure | null $icon = 'heroicon-o-exclamation';
+    public string | Closure | null $icon = 'heroicon-o-exclamation-triangle';
 
     public string $type = 'success';
 

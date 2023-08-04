@@ -24,7 +24,7 @@ trait HasType
     {
         $this->type = 'warning';
 
-        $this->icon = 'heroicon-o-exclamation';
+        $this->icon = 'heroicon-o-exclamation-triangle';
 
         return $this;
     }

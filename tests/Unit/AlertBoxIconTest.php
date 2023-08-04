@@ -44,5 +44,5 @@ it(description: 'auto assign warning icon')
         $alertBox = AlertBox::make()
             ->warning();
 
-        expect(value: $alertBox->getIcon())->toEqual(expected: 'heroicon-o-exclamation');
+        expect(value: $alertBox->getIcon())->toEqual(expected: 'heroicon-o-exclamation-triangle');
     });

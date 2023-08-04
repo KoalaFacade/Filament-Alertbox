@@ -1,4 +1,4 @@
-<x-filament::widget class="filament-alert-box-widget">
+<x-filament-widgets::widget class="filament-alert-box-widget">
     <x-filament-alertbox::base-alert-box
         :type="$this->getType()"
         :extraAttributes="$this->getExtraAttributes()"
@@ -6,4 +6,4 @@
         :label="$this->getLabel()"
         :helperText="$this->getHelperText()"
     />
-</x-filament::widget>
+</x-filament-widgets::widget>

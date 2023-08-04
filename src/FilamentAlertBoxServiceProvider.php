@@ -2,11 +2,13 @@
 
 namespace KoalaFacade\FilamentAlertBox;
 
-use Filament\PluginServiceProvider;
 use Spatie\LaravelPackageTools\Package;
+use Spatie\LaravelPackageTools\PackageServiceProvider;
 
-class FilamentAlertBoxServiceProvider extends PluginServiceProvider
+class FilamentAlertBoxServiceProvider extends PackageServiceProvider
 {
+    public static string $name = 'filament-alertbox';
+
     /**
      * @var string[]
      */
@@ -17,7 +19,7 @@ class FilamentAlertBoxServiceProvider extends PluginServiceProvider
     public function configurePackage(Package $package): void
     {
         $package
-            ->name(name: 'filament-alertbox')
+            ->name(name: static::$name)
             ->hasViews();
     }
 }

@@ -35,7 +35,16 @@
             </div>
         @endif
         <div class="description font-light">
-            {!! nl2br(htmlspecialchars($helperText)) !!}
+            {!!
+            nl2br(
+                string: strip_tags(
+                    string: $helperText,
+                    allowed_tags: [
+                        'a', 'span', 'p',
+                        'b', 'i', 'u'
+                    ]
+                ))
+            !!}
         </div>
     </div>
 </div>
